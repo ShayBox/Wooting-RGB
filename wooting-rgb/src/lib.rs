@@ -29,6 +29,12 @@ pub trait IntoMatrixRowColumn {
     fn get_matrix_row_and_column(&self) -> (u8, u8);
 }
 
+impl IntoMatrixRowColumn for (u8, u8) {
+    fn get_matrix_row_and_column(&self) -> (u8, u8) {
+        *self
+    }
+}
+
 /// Types that implement this trait can be associated with a scan index.
 pub trait FromScanIndex: Sized {
     /// Return the instance of this type for the given scan index.
