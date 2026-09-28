@@ -3,7 +3,7 @@ members = ["wooting-rgb", "wooting-rgb-sys"]
 resolver = "2"
 
 [workspace.package]
-version = "0.3.6"
+version = "0.3.7"
 authors = ["Shayne Hartford <shaybox@shaybox.com>"]
 edition = "2021"
 readme = "README.md"
